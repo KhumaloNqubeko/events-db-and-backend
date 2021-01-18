@@ -15,7 +15,11 @@ public class RegisteredUser {
 
 	@Id
 	private String id;
-	
 	private String firstname;
 	private String lastname;
+	private String phoneNumber;
+	private String emailAddress;
+	private String roles;
+	private String userName;
+	private String password;
 }
