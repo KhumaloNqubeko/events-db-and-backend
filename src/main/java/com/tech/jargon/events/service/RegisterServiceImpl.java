@@ -22,8 +22,13 @@ public class RegisterServiceImpl implements RegisterService{
 	@Override
 	public void createUser(RegisterRequest request) {
 		RegisteredUser user = new RegisteredUser();
-		user.setFirstname(request.getFirstname());
-		user.setLastname(request.getLastname());
+		user.setFirstName(request.getFirstName());
+		user.setLastName(request.getLastName());
+		user.setPhoneNumber(request.getPhoneNumber());
+		user.setEmailAddress(request.getEmailAddress());
+		user.setRoles(request.getRoles());
+		user.setUserName(request.getUserName());
+		user.setPassword(request.getPassword());
 		
 		registeredUserRepository.save(user);
 	}

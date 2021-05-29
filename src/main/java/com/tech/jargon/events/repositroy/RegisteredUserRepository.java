@@ -8,4 +8,6 @@ import com.tech.jargon.events.entity.RegisteredUser;
 @Repository
 public interface RegisteredUserRepository extends MongoRepository<RegisteredUser, String>{
 
+
+
 }

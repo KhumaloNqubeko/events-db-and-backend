@@ -26,7 +26,7 @@ public class RegisterController {
 	public ResponseEntity<?> createUser(@RequestBody RegisterRequest request) {
 		registerService.createUser(request);
 		
-		return new ResponseEntity<>("Created", HttpStatus.OK);
+		return new ResponseEntity<>("User created successfully", HttpStatus.OK);
 	}
 	
 	@GetMapping("/users")
